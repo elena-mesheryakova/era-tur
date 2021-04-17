@@ -103,6 +103,9 @@
         background-color: rgba(245, 158, 158, 0.6);
         color: red;
       }
+      .grafik-month.active:hover {
+        background-color: rgba(245, 158, 158, 0.9);
+      }
       .grafik-data-wrap {
         margin-top: 20px;
         display: flex;
@@ -124,15 +127,19 @@
       }
       .grafik-data:hover {
         background-color: #ccc;
+        color: #fff;
       }
       .grafik-data.none {
         font-size: 0;
-        border: none;
+        border: 1px solid transparent;
       }
       .grafik-data.active {
         border: 1px solid red;
         background-color: rgba(245, 158, 158, 0.6);
         color: red;
+      }
+      .grafik-data.active:hover {
+        background-color: rgba(245, 158, 158, 0.9);
       }
     </style>
   </body>
