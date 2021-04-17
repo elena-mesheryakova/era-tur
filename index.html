@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
-  </head>
   <body>
-    <div class="contacts-info-block">
-      <div class="info-wrap">
+    <div class="grafik-contacts-info-block">
+      <div class="grafik-info-wrap">
         <div class="grafik-month-wrap">
           <a class="grafik-month active">апрель</a>
           <a class="grafik-month">май</a>
@@ -26,8 +18,8 @@
             <a class="grafik-data">2.04.2021</a>
             <a class="grafik-data">3.04.2021</a>
             <a class="grafik-data">4.04.2021</a>
-          </div>
-          <div class="grafik-week-wrap">
+            <!-- </div> -->
+            <!-- <div class="grafik-week-wrap"> -->
             <a class="grafik-data">5.04.2021</a>
             <a class="grafik-data">6.04.2021</a>
             <a class="grafik-data active">7.04.2021</a>
@@ -35,8 +27,8 @@
             <a class="grafik-data">9.04.2021</a>
             <a class="grafik-data">10.04.2021</a>
             <a class="grafik-data">11.04.2021</a>
-          </div>
-          <div class="grafik-week-wrap">
+            <!-- </div> -->
+            <!-- <div class="grafik-week-wrap"> -->
             <a class="grafik-data">12.04.2021</a>
             <a class="grafik-data">13.04.2021</a>
             <a class="grafik-data">14.04.2021</a>
@@ -44,8 +36,8 @@
             <a class="grafik-data active">16.04.2021</a>
             <a class="grafik-data">17.04.2021</a>
             <a class="grafik-data">18.04.2021</a>
-          </div>
-          <div class="grafik-week-wrap">
+            <!-- </div> -->
+            <!-- <div class="grafik-week-wrap"> -->
             <a class="grafik-data">19.04.2021</a>
             <a class="grafik-data">20.04.2021</a>
             <a class="grafik-data active">21.04.2021</a>
@@ -53,8 +45,8 @@
             <a class="grafik-data">23.04.2021</a>
             <a class="grafik-data">24.04.2021</a>
             <a class="grafik-data">23.04.2021</a>
-          </div>
-          <div class="grafik-week-wrap">
+            <!-- </div> -->
+            <!-- <div class="grafik-week-wrap"> -->
             <a class="grafik-data">26.04.2021</a>
             <a class="grafik-data">27.04.2021</a>
             <a class="grafik-data">28.04.2021</a>
@@ -67,29 +59,31 @@
       </div>
     </div>
     <style>
-      .contacts-info-block {
+      .grafik-contacts-info-block {
         padding: 25px 50px;
         background: #ffffff;
         border-radius: 8px;
         flex-grow: 1;
         max-width: 74%;
       }
-      .info-wrap {
-        width: 870px;
-        height: 550px;
+      .grafik-info-wrap {
+        max-width: 870px;
+        width: 100%;
+        max-height: 550px;
         padding: 25px 50px;
         background-color: #fff;
       }
 
       .grafik-month-wrap {
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         padding-right: 20px;
+        flex-wrap: wrap;
       }
       .grafik-month {
         border: 1px solid #777;
         padding: 3px 11px 7px 11px;
-        width: 140px;
+        width: 120px;
         text-align: center;
         color: #777;
         margin: 20px 3px 0 3px;
@@ -97,6 +91,7 @@
       }
       .grafik-month:hover {
         background-color: #ccc;
+        color: #fff;
       }
       .grafik-month.active {
         border: 1px solid red;
@@ -105,6 +100,7 @@
       }
       .grafik-month.active:hover {
         background-color: rgba(245, 158, 158, 0.9);
+        color: #fff;
       }
       .grafik-data-wrap {
         margin-top: 20px;
@@ -113,12 +109,13 @@
       }
       .grafik-week-wrap {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
       }
       .grafik-data {
         border: 1px solid #cacaca;
         padding: 13px;
-        width: 100px;
+        padding-right: 17px;
+        width: 90px;
         font-size: 11px;
         text-align: center;
         color: #cecece;
@@ -133,6 +130,9 @@
         font-size: 0;
         border: 1px solid transparent;
       }
+      .grafik-data.none:hover {
+        background-color: #fff;
+      }
       .grafik-data.active {
         border: 1px solid red;
         background-color: rgba(245, 158, 158, 0.6);
@@ -140,7 +140,11 @@
       }
       .grafik-data.active:hover {
         background-color: rgba(245, 158, 158, 0.9);
+        color: #fff;
       }
+
+      
+      
     </style>
   </body>
 </html>
