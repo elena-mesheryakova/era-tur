@@ -1,21 +1,88 @@
-@media (max-width: 880px) {
-  .grafik-info-wrap {
-    width: 500px;
+@media (max-width: 992px) {
+  body .grafik-contacts-info-block {
+    margin: auto;
+    min-width: 95%;
+    padding: 10px 10px;
   }
-  .grafik-month-wrap {
-    width: 500px;
+
+  body .grafik-month-wrap {
+    width: 100%;
   }
+  body .grafik-week-wrap {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  body .grafik-contacts-info-block {
+    margin: auto;
+    min-width: 95%;
+    padding: 10px 10px;
+  }
+  body .grafik-info-wrap {
+    padding: 25px 15px;
+  }
+  body .grafik-month {
+    width: 135px;
+    font-size: 20px;
+  }
+  body .grafik-data {
+    width: 120px;
+    font-size: 16px;
+  }
+  body .grafik-month-wrap {
+    width: 100%;
+  }
+  body .grafik-week-wrap {
+    width: 100%;
+  }
+
   .grafik-data.none {
     display: none;
   }
 }
-@media (max-width: 710px) {
-  .grafik-month-wrap {
-    width: 400px;
+
+@media (max-width: 690px) {
+  body .grafik-data {
+    width: 150px;
+    font-size: 20px;
+  }
+
+  body .grafik-month {
+    width: 150px;
   }
 }
-@media (max-width: 450px) {
-  .grafik-month-wrap {
-    width: 290px;
+@media (max-width: 650px) {
+  body .grafik-data {
+    width: 25%;
+    font-size: 20px;
+  }
+
+  body .grafik-month {
+    width: 40%;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 630px) {
+  body .grafik-data {
+    width: 40%;
+  }
+}
+@media (max-width: 570px) {
+  body .grafik-month {
+    width: 90%;
+    margin-right: 0;
+  }
+  body .grafik-month {
+    font-size: 25px;
+  }
+}
+@media (max-width: 530px) {
+  body .grafik-month {
+    width: 100%;
+  }
+  body .grafik-data {
+    width: 100%;
+    font-size: 25px;
   }
 }
