@@ -1,0 +1,21 @@
+@media (max-width: 880px) {
+  .grafik-info-wrap {
+    width: 500px;
+  }
+  .grafik-month-wrap {
+    width: 500px;
+  }
+  .grafik-data.none {
+    display: none;
+  }
+}
+@media (max-width: 710px) {
+  .grafik-month-wrap {
+    width: 400px;
+  }
+}
+@media (max-width: 450px) {
+  .grafik-month-wrap {
+    width: 290px;
+  }
+}
