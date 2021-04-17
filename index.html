@@ -91,13 +91,17 @@
         padding: 3px 11px 7px 11px;
         width: 140px;
         text-align: center;
-        color: #ccc;
+        color: #777;
         margin: 20px 3px 0 3px;
         cursor: pointer;
       }
+      .grafik-month:hover {
+        background-color: #ccc;
+      }
       .grafik-month.active {
         border: 1px solid red;
-        color: rgba(245, 158, 158, 0.6);
+        background-color: rgba(245, 158, 158, 0.6);
+        color: red;
       }
       .grafik-data-wrap {
         margin-top: 20px;
@@ -109,14 +113,17 @@
         justify-content: space-between;
       }
       .grafik-data {
-        border: 1px solid #cecece;
+        border: 1px solid #cacaca;
         padding: 13px;
         width: 100px;
         font-size: 11px;
         text-align: center;
-        color: #ccc;
+        color: #cecece;
         margin: 8px 3px 0 3px;
         cursor: pointer;
+      }
+      .grafik-data:hover {
+        background-color: #ccc;
       }
       .grafik-data.none {
         font-size: 0;
@@ -124,7 +131,8 @@
       }
       .grafik-data.active {
         border: 1px solid red;
-        color: rgba(245, 158, 158, 0.6);
+        background-color: rgba(245, 158, 158, 0.6);
+        color: red;
       }
     </style>
   </body>
