@@ -15,9 +15,9 @@
 
 @media (max-width: 767px) {
   body .grafik-contacts-info-block {
-    margin: auto;
+    margin: 0 auto;
     min-width: 95%;
-    padding: 10px 10px;
+    padding: 0;
   }
   body .grafik-info-wrap {
     padding: 10px 15px;
@@ -54,7 +54,7 @@
 }
 @media (max-width: 650px) {
   body .grafik-data {
-    width: 25%;
+    width: 100px;
     font-size: 20px;
   }
 
@@ -69,6 +69,9 @@
   }
 }
 @media (max-width: 570px) {
+  body .grafik-info-wrap {
+    padding: 10px 0;
+  }
   body .grafik-month {
     width: 90%;
     margin-right: 0;
@@ -78,11 +81,38 @@
   }
 }
 @media (max-width: 530px) {
+  body .grafik-info-wrap {
+    padding: 10px 0;
+  }
   body .grafik-month {
-    width: 100%;
+    width: 93%;
+  }
+  body .grafik-month-wrap {
+    padding-right: 0;
   }
   body .grafik-data {
-    width: 100%;
+    width: 39%;
+
+    font-size: 25px;
+  }
+  body .grafik-week-wrap {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 415px) {
+  body .grafik-month {
+    width: 92%;
+  }
+}
+
+@media (max-width: 390px) {
+  body .grafik-month {
+    width: 92%;
+  }
+
+  body .grafik-data {
+    width: 36%;
     font-size: 25px;
   }
 }
